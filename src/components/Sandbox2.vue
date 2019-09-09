@@ -9,8 +9,10 @@
     hr
     h2 条件付きレンダリング
     v-btn(small @click="toggle") 切り替え
-    p(v-if="show") Yes
-    p(v-show="show") Yes
+    transition
+      p(v-if="show") Yes
+    transition
+      p(v-show="show") Yes
 </template>
 
 <script>
@@ -53,5 +55,15 @@ export default {
 /* 後ろのスタイルで上書き */
 .safe {
   color: blue;
+}
+.v-enter-active {
+  transition: opacity 3s;
+}
+.v-leave-active {
+  transition: opacity 1s;
+}
+.v-enter,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
