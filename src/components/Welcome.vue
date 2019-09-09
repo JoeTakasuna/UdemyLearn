@@ -7,6 +7,8 @@
       v-btn todo list
     router-link.link(to="/bitcoin-price")
       v-btn bitcoin price
+    router-link.link(to="/sandbox")
+      v-btn sandbox
 </template>
 
 <script>

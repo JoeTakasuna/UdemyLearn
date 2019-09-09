@@ -15,6 +15,7 @@ import Welcome from './components/Welcome.vue'
 import Top from './components/Top.vue'
 import TodoList from './components/TodoList.vue'
 import BitcoinPrice from './components/BitcoinPrice.vue'
+import Sandbox from './components/Sandbox.vue'
 
 // 2. ルートをいくつか定義します
 // 各ルートは 1 つのコンポーネントとマッピングされる必要があります。
@@ -25,7 +26,8 @@ const routes = [
   { path: '/', component: Welcome },
   { path: '/top', component: Top },
   { path: '/todo-list', component: TodoList },
-  { path: '/bitcoin-price', component: BitcoinPrice }
+  { path: '/bitcoin-price', component: BitcoinPrice },
+  { path: '/sandbox', component: Sandbox }
 ]
 
 // 3. ルーターインスタンスを作成して、ルートオプションを渡します
