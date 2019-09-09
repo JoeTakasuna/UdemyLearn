@@ -6,6 +6,9 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 
+import HeaderMenu from './components/HeaderMenu.vue'
+Vue.component('HeaderMenu', HeaderMenu)
+
 // 0. モジュールシステムを使っている場合 (例: vue-cli 経由で)、Vue と VueRouter をインポートし、`Vue.use(VueRouter)` を呼び出します。
 Vue.use(VueRouter)
 
