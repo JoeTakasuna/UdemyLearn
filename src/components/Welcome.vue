@@ -11,6 +11,12 @@
       v-btn sandbox
     router-link.link(to="/search-in-qiita")
       v-btn search-in-qiita
+    router-link.link(to="/sandbox2")
+      v-btn sandbox2
+    router-link.link(to="/sandbox3")
+      v-btn sandbox3
+    router-link.link(to="/sandbox4")
+      v-btn sandbox4
 </template>
 
 <script>

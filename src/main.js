@@ -17,6 +17,9 @@ import TodoList from './components/TodoList.vue'
 import BitcoinPrice from './components/BitcoinPrice.vue'
 import Sandbox from './components/Sandbox.vue'
 import SearchInQiita from './components/SearchInQiita.vue'
+import Sandbox2 from './components/Sandbox2.vue'
+import Sandbox3 from './components/Sandbox3.vue'
+import Sandbox4 from './components/Sandbox4.vue'
 
 // 2. ルートをいくつか定義します
 // 各ルートは 1 つのコンポーネントとマッピングされる必要があります。
@@ -29,7 +32,10 @@ const routes = [
   { path: '/todo-list', component: TodoList },
   { path: '/bitcoin-price', component: BitcoinPrice },
   { path: '/sandbox', component: Sandbox },
-  { path: '/search-in-qiita', component: SearchInQiita }
+  { path: '/search-in-qiita', component: SearchInQiita },
+  { path: '/sandbox2', component: Sandbox2 },
+  { path: '/sandbox3', component: Sandbox3 },
+  { path: '/sandbox4', component: Sandbox4 }
 ]
 
 // 3. ルーターインスタンスを作成して、ルートオプションを渡します
