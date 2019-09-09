@@ -6,6 +6,7 @@
 - Vue Router
 - Vuetify
 - Pug
+- axios
 
 ## Project setup
 ```

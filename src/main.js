@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import vuetify from './plugins/vuetify'
+import axios from 'axios'
 
 Vue.config.productionTip = false
 
@@ -13,6 +14,7 @@ Vue.use(VueRouter)
 import Welcome from './components/Welcome.vue'
 import Top from './components/Top.vue'
 import TodoList from './components/TodoList.vue'
+import BitcoinPrice from './components/BitcoinPrice.vue'
 
 // 2. ルートをいくつか定義します
 // 各ルートは 1 つのコンポーネントとマッピングされる必要があります。
@@ -22,7 +24,8 @@ import TodoList from './components/TodoList.vue'
 const routes = [
   { path: '/', component: Welcome },
   { path: '/top', component: Top },
-  { path: '/todo-list', component: TodoList }
+  { path: '/todo-list', component: TodoList },
+  { path: '/bitcoin-price', component: BitcoinPrice }
 ]
 
 // 3. ルーターインスタンスを作成して、ルートオプションを渡します
@@ -37,7 +40,8 @@ const router = new VueRouter({
 // アプリケーション全体がルーターを認知できるように、
 // ルーターをインジェクトすることを忘れないでください。
 new Vue({
-  vuetify,
   router,
+  vuetify,
+  axios,
   render: h => h(App)
 }).$mount('#app')

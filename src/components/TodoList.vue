@@ -1,5 +1,6 @@
 <template lang="pug">
-  .todo-list TODO List
+  .container
+    h1 TODO List
     form(@submit.prevent)
       input(v-model="newItem" placeholder="ここに記入")
       v-btn(x-small @click="addItem") Add
@@ -13,7 +14,7 @@
 
 <script>
 export default {
-  name: 'todo-list',
+  name: 'TodoList',
   data () {
     return {
       newItem: '',
@@ -39,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-.todo-list {
+.container {
   margin: 24px;
 }
 ul {

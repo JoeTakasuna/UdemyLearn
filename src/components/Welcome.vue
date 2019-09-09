@@ -1,15 +1,17 @@
 <template lang="pug">
-  .welcome
-    p {{ message }}
+  .container
+    h1 {{ message }}
     router-link.link(to="/top")
       v-btn top
     router-link.link(to="/todo-list")
       v-btn todo list
+    router-link.link(to="/bitcoin-price")
+      v-btn bitcoin price
 </template>
 
 <script>
 export default {
-  name: 'welcome',
+  name: 'Welcome',
   data () {
     return {
       message: 'Hello, Joe!'
@@ -19,7 +21,7 @@ export default {
 </script>
 
 <style scoped>
-.welcome {
+.container {
   display: flex;
   flex-direction: column;
   text-align: center;

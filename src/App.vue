@@ -23,10 +23,10 @@ export default {
   // methods: {
   //   メソッドの組み込み
   // },
-  // created: {
+  // created: function() {
   //   インスタンスが作成された後に同期的に呼ばれるフック
   // },
-  // mounted: {
+  // mounted: function() {
   //   インスタンスがマウントされたちょうど後に呼ばれるフック
   // }
 };

@@ -1,16 +1,16 @@
 <template lang="pug">
-  .top Top Page
+  .container
+    h1 Top
 </template>
 
 <script>
 export default {
-  name: 'top'
+  name: 'Top'
 };
 </script>
 
 <style scoped>
-.top {
-  text-align: center;
+.container {
   margin: 24px;
 }
 </style>
