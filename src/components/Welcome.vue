@@ -4,11 +4,13 @@
     router-link.link(to="/top")
       v-btn top
     router-link.link(to="/todo-list")
-      v-btn todo list
+      v-btn todo-list
     router-link.link(to="/bitcoin-price")
-      v-btn bitcoin price
+      v-btn bitcoin-price
     router-link.link(to="/sandbox")
       v-btn sandbox
+    router-link.link(to="/search-in-qiita")
+      v-btn search-in-qiita
 </template>
 
 <script>
