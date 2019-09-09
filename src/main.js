@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 // 他のファイルからインポートすることもできます
 import Welcome from './components/Welcome.vue'
 import Top from './components/Top.vue'
+import TodoList from './components/TodoList.vue'
 
 // 2. ルートをいくつか定義します
 // 各ルートは 1 つのコンポーネントとマッピングされる必要があります。
@@ -20,7 +21,8 @@ import Top from './components/Top.vue'
 // ネストされたルートに関しては後で説明します
 const routes = [
   { path: '/', component: Welcome },
-  { path: '/top', component: Top }
+  { path: '/top', component: Top },
+  { path: '/todo-list', component: TodoList }
 ]
 
 // 3. ルーターインスタンスを作成して、ルートオプションを渡します
